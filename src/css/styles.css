@@ -1,0 +1,201 @@
+
+:root {
+    --inactive: rgb(238, 187, 93);
+    --active: rgb(102, 192, 102);
+    --white: #FFFFFF;
+    --bg1: #707070;
+    --bg2: #adadad;
+    --nice: #0384fc;
+}
+
+body{
+    background-color: var(--bg2);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+    margin-top: 150px;
+    padding-left: 150px;
+    scale: 2;
+}
+
+.welcome{
+    alignment: center;
+    justify-content: center;
+    position: center;
+}
+.login{
+
+}
+
+.header{
+    justify-content: center;
+    text-align: center;
+    background: -webkit-linear-gradient(#0384fc, #005aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+input[type=text] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.Button{
+    variant:"contained";
+    color: red;
+}
+
+.field{
+    all: unset;
+    border-radius: 10px;
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+    scale: 1;
+    background-color: var(--bg2);
+}
+
+.field:focus{
+    border-width: 4px;
+    border: 2px solid var(--nice);
+    scale: 1.05;
+    transition: scale 0.5s, border 0.5s;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: -140px;
+    padding: 2px;
+}
+
+.forms-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: -50px;
+    padding: 2px;
+}
+
+.buttons{
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px groove #FFFFFF;
+    background: linear-gradient(#0384fc, #adadad);
+    width: 190px;
+    height: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.5s;
+    box-shadow: 2;
+    
+}
+.buttons:hover{
+    scale: 1.05;
+    background: linear-gradient(#0384fc, #0384fc);
+    border: 2px groove var(--nice);
+    transition: background-color 0.5s, scale 0.5s;
+    cursor: pointer;
+}
+
+.lecture{
+    all: unset;
+    background: linear-gradient(var(--inactive), var(--bg2));
+    border: 3px groove #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    scale: 1;
+    transition: var(--bg2) 0.5s, var(--inactive) 0.5s, scale 0.5s;
+    gap: 10px;
+    width: 100%;
+    margin-right: 3px;
+    box-shadow: 5px 5px 30px 1px black;
+}
+
+.lecture:hover{
+    cursor: pointer;
+    scale: 1.05;
+    --bg2: rgb(238, 187, 93);
+    transition: scale 0.5s;
+}
+
+.lecture-active{
+    background: linear-gradient(var(--active), var(--bg2));
+    border: 2px groove #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    box-shadow: 5px 5px 30px 1px black;
+}
+
+.lecture-active:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: scale 0.5s;
+    --bg2: rgb(102, 192, 102);
+}
+
+.lecture_element{
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+
+}
+
+.schedules{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.schedule{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid;
+    border-color: #0384fc;
+    border-radius: 10px;
+    min-width: 400px;
+    box-shadow: 5px 5px 30px 5px black;
+}
+
+.schedule_element{
+    all:unset;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
+    width: 90%;
+}
+
+.schedule_header{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.lec_cont{
+    padding-left: 5px;
+    padding-right: 5px;
+    pointer-events: none;
+}
